@@ -1,0 +1,20 @@
+@import '../node_modules/@angular/material/theming';
+@include mat-core();
+$andrews-theme-primary: mat-palette($mat-pink);
+$andrews-theme-accent:  mat-palette($mat-pink, A200, A100, A400);
+$andrews-theme-warn:    mat-palette($mat-red);
+
+$andrews-theme: mat-light-theme($andrews-theme-accent , $andrews-theme-primary, $andrews-theme-warn);
+
+@include angular-material-theme($andrews-theme); 
+
+
+.alternative{
+    $andrews-theme-primary: mat-palette($mat-red);
+$andrews-theme-accent:  mat-palette($mat-red, A200, A100, A400);
+$andrews-theme-warn:    mat-palette($mat-pink);
+
+$andrews-theme: mat-light-theme($andrews-theme-accent , $andrews-theme-primary, $andrews-theme-warn);
+
+@include angular-material-theme($andrews-theme); 
+}

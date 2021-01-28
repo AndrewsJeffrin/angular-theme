@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'customtheme';
+
+  isTrue:boolean =false;
+  changeTheme(){
+    this.isTrue =!this.isTrue
+
+  }
+
 }
